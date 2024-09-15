@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCE Student Connect</title>
+  </head>
+  <style>
+    :root {
+      --color: #35387f;
+      --seccolor: #9b8ec9;
+    }
+    body {
+      margin: 0;
+      background-image: url(dcebg2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 120%;
+    }
+    ul {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      background-color: var(--color);
+    }
+    nav ul li {
+      list-style-type: none;
+      padding: 10px;
+      font-family: poppins;
+    }
+    ul li a {
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: white;
+      border: 3px solid white;
+      border-radius: 20px;
+      height: 500px;
+      width: 300px;
+      top: 20vh;
+      padding: 0 0 34px 0;
+      margin: 4px;
+      margin-left: 20px;
+    }
+
+    img {
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 20px;
+      position: relative;
+      top: 3px;
+      display: block;
+      left: 3.5px;
+    }
+
+    .content h1 {
+      font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+      margin-left: 10px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    .content p {
+      font-family: poppins;
+      margin-left: 10px;
+      color: gray;
+      font-size: small;
+      font-weight: lighter;
+    }
+
+    .capsules span {
+      padding: 0px 9px;
+      margin: 3px;
+      border: 2px solid gray;
+      border-radius: 20px;
+      position: relative;
+      top: 15px;
+      font-size: 15px;
+      font-family: "Baloo Bhai 2";
+    }
+
+    .button span {
+      border: 2px solid rgb(68, 151, 178);
+      font-family: "Baloo Bhai 2";
+      color: rgb(68, 151, 178);
+      border-radius: 20px;
+      padding: 0px 9px;
+      margin-left: 90px;
+      background-color: rgb(181, 218, 216);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .button button:hover {
+      background-color: rgb(194, 225, 246);
+      color: rgb(10, 136, 214);
+    }
+
+    .card-container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right {
+            margin-left: auto;
+        }
+        .login{
+      border: 2px solid rgb(4, 6, 6);
+      font-family: "Baloo Bhai 2";
+      color: rgb(255, 255, 255);
+      padding: 0px 9px;
+      margin-left: 90px;
+      background-color: rgb(7, 14, 13);
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav ul li img{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: -2px;
+        padding-right: 20px;
+        border: none;
+    }
+    
+    
+    
+
+h1{
+        font-family: Poppins, sans-serif;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        padding: 20px;
+        border: 3px solid white;
+        border-radius: 15px;
+        background-color: black;
+        margin: 20px;
+}
+    .navbar {
+            background-color: var(--color);
+            overflow: hidden;
+            font-family: poppins;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: var(--color);
+            color: var(--color);
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--color);
+            min-width: 160px;
+            box-shadow: black;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #9b8ec9;
+            color: black;
+        }
+  </style>
+  <body>
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <li><img src="logo.png" alt="logo" height="35px" width="150px" ></li>
+                <li><a href="https://akshitbhandaricodes.github.io/StudentConnectProject/index.html" target="_blank">Home</a></li>
+                <li><a href="https://akshitbhandaricodes.github.io/StudentConnectProject/freshers.html" target="_blank">Freshers</a></li>
+                <li><a href="https://akshitbhandaricodes.github.io/StudentConnectProject/seniors.html" target="_blank">Seniors</a></li>
+                <li><a href="https://akshitbhandaricodes.github.io/StudentConnectProject/Resources.html" target="_blank">Resources</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" style="font-weight: bold;">Guide Options</button>
+                    <div class="dropdown-content">
+                        <a href="https://akshitbhandaricodes.github.io/StudentConnectProject/seekguide.html" >Seek for Guide</a>
+                        <a href="https://akshitbhandaricodes.github.io/StudentConnectProject/guide.html">Become a Guide</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="nav-right">
+              <li><a class="login" href="https://akshitbhandaricodes.github.io/StudentConnectProject/login.html">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1>WELCOME TO THE DRONOCHARYA DCE STUDENT CONNECT PORTAL</h1>
+    
+  </body>
+</html>
+
